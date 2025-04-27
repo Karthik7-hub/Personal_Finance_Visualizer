@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+      Personal Finance Visualizer
+    </title>
+  </head>
+<body>
+  <h1>Personal Finance Visualizer</h1>
+  <div class="input-section">
+    <label for="spent-for">Spent For:</label>
+    <input type="text" id="spent-for">
+    <label for="amount-input">Amount:</label>
+    <input type="number" id="amount-input">
+    <label for="date-input">Date:</label>
+    <input type="date" id="date-input">
+    <button id="add-btn">Add</button>
+  </div>
+  <div class="expenses-list">
+    <h2>Expenses List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Spent For</th>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="expenses-table">
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total:</td>
+          <td id="total-amount"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
